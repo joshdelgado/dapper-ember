@@ -1,0 +1,23 @@
+{
+	"challenges" : [{
+		"name" : "Test 1",
+		"description" : "This is the first description",
+		"image" : "challenge_image.jpg"
+	},{
+		"name" : "Test 2",
+		"description" : "This is the second description",
+		"image" :  "challenge_image.jpg"
+	},{
+		"name" : "Test 3",
+		"description" : "This is the third description",
+		"image" : "challenge_image.jpg"
+	},{
+		"name" : "Test 4",
+		"description" : "This is the fourth description",
+		"image" :  "challenge_image.jpg"
+	},{
+		"name" : "Test 5",
+		"description" : "This is the fifth description",
+		"image" : "challenge_image.jpg"
+	}]
+}

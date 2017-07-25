@@ -1,0 +1,7 @@
+{{input value=playerName}}
+<button {{action "addPlayer"}}>Add Player</button>
+<ul>
+  {{#each players as |player|}}
+  <li>{{player}}</li>
+  {{/each}}
+</ul>
