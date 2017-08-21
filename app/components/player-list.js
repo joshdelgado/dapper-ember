@@ -22,6 +22,7 @@ export default Ember.Component.extend({
         nextTurn = turn + 1;
       } else {
         nextTurn = 0;
+        alert("Round Complete");
       }
       this.set('whosTurn', nextTurn);
       console.log("Player "+nextTurn+"'s turn");
