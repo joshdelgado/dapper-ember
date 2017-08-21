@@ -1,3 +1,19 @@
+/**************************
+* Global
+***************************/
+.ember-application{
+  background-color:#666;
+}
+.app-wrap{
+  width:375px;
+  height:667px;
+  margin:0 auto;
+  background-color: #fff;
+}
+
+/**************************
+* Header
+***************************/
 .player-list{
   width:400px;
   background-color: #ddd;
@@ -17,11 +33,17 @@
 .player-list li{
   font-weight: bold;
   text-align: center;
+  padding: 10px 0 5px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.player-list li.active{
+  background-color: #aaa;
 }
 .player-list li span{
   display: block;
+  font-size: 2em;
+  padding-top:5px;
   color: red;
 }
