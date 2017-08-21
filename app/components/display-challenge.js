@@ -6,14 +6,14 @@ export default Ember.Component.extend({
   image: 'imageeeee',
   actions: {
     newChallenge: function(){
-      var thiss = this;
+      var _this = this;
       $.getJSON("/challenge-packs/bahpack1.json", function(data){
         var num = Math.floor(Math.random() * data['challenges'].length)
         var challenge = data['challenges'][num];
 
-        thiss.set('name', challenge.name);
-        thiss.set('description', challenge.description);
-        thiss.set('image', challenge.image);
+        _this.set('name', challenge.name);
+        _this.set('description', challenge.description);
+        _this.set('image', challenge.image);
       });
     }
   }

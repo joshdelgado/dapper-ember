@@ -1,49 +1,5 @@
-/**************************
-* Global
-***************************/
-.ember-application{
-  background-color:#666;
-}
-.app-wrap{
-  width:375px;
-  height:667px;
-  margin:0 auto;
-  background-color: #fff;
-}
+@import 'variables';
+@import 'mixins';
+@import 'global';
 
-/**************************
-* Header
-***************************/
-.player-list{
-  width:400px;
-  background-color: #ddd;
-}
-.player-list ul{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width:100%;
-  padding: 0;
-  list-style: none;
-}
-.player-list li{
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0 5px;
-  -webkit-box-flex: 0;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-.player-list li.active{
-  background-color: #aaa;
-}
-.player-list li span{
-  display: block;
-  font-size: 2em;
-  padding-top:5px;
-  color: red;
-}
+@import 'header';

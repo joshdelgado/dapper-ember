@@ -25,6 +25,11 @@ export default Ember.Component.extend({
       }
       this.set('whosTurn', nextTurn);
       console.log("Player "+nextTurn+"'s turn");
+    },
+    addPoint: function(){
+      let player = this.get('players').objectAt(this.get('whosTurn'));
+      let newScore = player.score + 1;
+      Ember.set(player, 'score', newScore);
     }
   }
 });

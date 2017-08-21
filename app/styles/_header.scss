@@ -1,0 +1,33 @@
+/**************************
+* Header
+***************************/
+.player-list{
+  width:100%;
+  background-color: #ddd;
+
+  ul{
+    @include flex;
+    width:100%;
+    padding: 0;
+    list-style: none;
+
+    li{
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0 5px;
+      -webkit-box-flex: 0;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+
+      span{
+        display: block;
+        font-size: 2em;
+        padding-top:5px;
+        color: red;
+      }
+    }
+    li.active{
+      background-color: #aaa;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/**************************
+* Global
+***************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ember-application {
+  background-color: #333; }
+
+.app-wrap {
+  width: 375px;
+  height: 667px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #000; }
+
+/**************************
+* Header
+***************************/
+.player-list {
+  width: 100%;
+  background-color: #ddd; }
+  .player-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    list-style: none; }
+    .player-list ul li {
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0 5px;
+      -webkit-box-flex: 0;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+      .player-list ul li span {
+        display: block;
+        font-size: 2em;
+        padding-top: 5px;
+        color: red; }
+    .player-list ul li.active {
+      background-color: #aaa; }
