@@ -14,6 +14,8 @@ export default Ember.Component.extend({
         _this.set('name', challenge.name);
         _this.set('description', challenge.description);
         _this.set('image', challenge.image);
+
+        
       });
     }
   }
