@@ -1,6 +1,12 @@
-<div class="container">
-  <button {{action "newChallenge"}}>New Challenge</button>
-  <h3>{{name}}</h3>
-  <p>{{description}}</p>
-  <p>{{image}}</p>
+<div class="challenge-wrap">
+  {{#if name}}
+    <div class="challenge-image">
+      <img src="/images/{{image}}" alt="">
+    </div>
+    <div class="challenge-info">
+      <h3 class="challenge-title">{{name}}</h3>
+      <p class="challenge-description">{{description}}</p>
+    </div>
+  {{/if}}
 </div>
+<button {{action "newChallenge"}} class="new-challenge-btn">New Challenge</button>

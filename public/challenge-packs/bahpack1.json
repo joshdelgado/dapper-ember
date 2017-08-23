@@ -2,22 +2,22 @@
 	"challenges" : [{
 		"name" : "Butt 1",
 		"description" : "This is the first description",
-		"image" : "challenge_image.jpg"
+		"image" : "challenge_image_1.png"
 	},{
 		"name" : "Butt 2",
 		"description" : "This is the second description",
-		"image" :  "challenge_image.jpg"
+		"image" :  "challenge_image_2.png"
 	},{
 		"name" : "Butt 3",
 		"description" : "This is the third description",
-		"image" : "challenge_image.jpg"
+		"image" : "challenge_image_3.png"
 	},{
 		"name" : "Butt 4",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image.jpg"
+		"image" :  "challenge_image_4.png"
 	},{
 		"name" : "Butt 5",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image.jpg"
+		"image" : "challenge_image_5.png"
 	}]
 }
