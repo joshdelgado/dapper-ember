@@ -16,3 +16,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@mixin button-style{
+  background-color: #888;
+  border: 0;
+  padding:10px;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}

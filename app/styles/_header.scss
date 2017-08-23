@@ -32,3 +32,13 @@
     }
   }
 }
+.buttons-wrap{
+  @include flex;
+
+  button{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    @include button-style;
+  }
+}

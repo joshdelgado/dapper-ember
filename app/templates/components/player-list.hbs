@@ -1,8 +1,6 @@
 <!--<h2>Round {{currentRound}}</h2>
 {{input value=playerName}}
-<button {{action "addPlayer"}}>Add Player</button>
-<button {{action "nextTurn"}}>Next Turn</button>
-<button {{action "addPoint"}}>Add Point</button>-->
+<button {{action "addPlayer"}}>Add Player</button>-->
 
 <div class="player-list">
   <ul>
@@ -14,4 +12,8 @@
       {{/if}}
     {{/each}}
   </ul>
+</div>
+<div class="buttons-wrap">
+  <button {{action "nextTurn"}}>Failure</button>
+  <button {{action "addPoint"}}>Success</button>
 </div>

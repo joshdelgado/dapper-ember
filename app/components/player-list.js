@@ -33,7 +33,9 @@ export default Ember.Component.extend({
         console.log("Round "+round+" Complete");
       }
 
-      if(round >= 2){
+      console.log(turn);
+
+      if(nextRound >= 2 && turn == 3){
         let p1 = this.get('players').objectAt(0).score,
             p2 = this.get('players').objectAt(1).score,
             p3 = this.get('players').objectAt(2).score,
@@ -53,6 +55,7 @@ export default Ember.Component.extend({
       let player = this.get('players').objectAt(this.get('whosTurn'));
       let newScore = player.score + 1;
       Ember.set(player, 'score', newScore);
+      this.send('nextTurn');
     }
   }
 });
