@@ -1,0 +1,58 @@
+.start-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:9;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  @include flex;
+  @include flex-vertical;
+  @include flex-center;
+
+  &.hidden{
+    display: none;
+  }
+
+  input{
+    display: block;
+    margin:0 auto 10px;
+    width:100%;
+    padding:0 10px;
+    font-size:1.5rem;
+    height: 58px;
+  }
+  button{
+    width:100%;
+    @include button-style;
+  }
+}
+.end-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:9;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  @include flex;
+  @include flex-vertical;
+  @include flex-center;
+
+  &.hidden{
+    display: none;
+  }
+}
+.start-screen-inner,
+.end-screen-inner{
+  text-align: center;
+  padding:20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+
+  h1{
+    margin-top:0;
+    font-size: 3rem;
+  }
+}

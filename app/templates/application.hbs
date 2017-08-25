@@ -1,6 +1,52 @@
 <div class="app-wrap">
-  {{player-list}}
-  {{display-challenge}}
-  {{game-footer}}
-  {{outlet}}
+  <div class="start-screen {{if gameStarted "hidden"}}">
+    <div class="start-screen-inner">
+      <h1>Dapper</h1>
+      {{input value=player1Name placeholder="Player 1"}}
+      {{input value=player2Name placeholder="Player 2"}}
+      {{input value=player3Name placeholder="Player 3"}}
+      {{input value=player4Name placeholder="Player 4"}}
+      <button {{action 'firstRound'}}>Start Game</button>
+    </div>
+  </div>
+  <div class="end-screen {{if gameEnded "active" "hidden"}}">
+    <div class="end-screen-inner">
+      <h1>Game Over.</h1>
+      <h2>{{winner}} wins!</h2>
+      <button {{action 'newGame'}}>New Game</button>
+    </div>
+  </div>
+
+  <div class="app-window">
+    <div class="player-list">
+      <ul>
+        {{#each players as |player index|}}
+          {{#if (eq index whosTurn)}}
+            <li class="active">{{player.name}}<span>{{player.score}}</span></li>
+          {{else}}
+            <li>{{player.name}}<span>{{player.score}}</span></li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="challenge-wrap">
+      {{#if name}}
+        <div class="challenge-image">
+          <img src="/images/{{image}}" alt="">
+        </div>
+        <div class="challenge-info">
+          <h3 class="challenge-title">{{name}}</h3>
+          <p class="challenge-description">{{description}}</p>
+        </div>
+      {{/if}}
+    </div>
+
+    <div class="buttons-wrap">
+      <button {{action "nextTurn"}}>Failure</button>
+      <button {{action "addPoint"}}>Success</button>
+    </div>
+
+    {{game-footer}}
+  </div>
 </div>

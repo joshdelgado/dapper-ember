@@ -16,6 +16,10 @@
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 15px #000;
           box-shadow: 0px 0px 15px #000;
+}
+.app-window{
+  height: 100%;
+  width: 100%;
   @include flex;
   @include flex-vertical;
 
@@ -24,7 +28,7 @@
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
   }
-  > div:nth-child(2){
+  > div.challenge-wrap{
     @include flex;
     @include flex-vertical;
     -webkit-box-flex: 1;
