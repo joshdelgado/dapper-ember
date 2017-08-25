@@ -69,13 +69,18 @@ export default Ember.Controller.extend({
 
       //console.log(turn);
 
-      if(nextRound >= 2 && turn == 3){
-        let p1 = this.get('players').objectAt(0).score,
+      if(nextRound >= 2 && turn == this.get('players').length - 1){
+        /*let p1 = this.get('players').objectAt(0).score,
             p2 = this.get('players').objectAt(1).score,
             p3 = this.get('players').objectAt(2).score,
-            p4 = this.get('players').objectAt(3).score,
-            arr = [p1, p2, p3, p4],
-            winnerNum = arr.indexOf( Math.max(...arr) ),
+            p4 = this.get('players').objectAt(3).score;*/
+        let arr = [];
+
+        for( var i = 0; i < this.get('players').length; i++){
+          arr.push( this.get('players').objectAt(i).score );
+        }
+        console.log(arr);
+        let winnerNum = arr.indexOf( Math.max(...arr) ),
             winner = this.get('players').objectAt(winnerNum).name;
 
         this.set('winner', winner);

@@ -11,15 +11,17 @@
   </div>
   <div class="end-screen {{if gameEnded "active" "hidden"}}">
     <div class="end-screen-inner">
-      <ul>
-        {{#each players as |player index|}}
-          {{#if (eq index whosTurn)}}
-            <li class="active">{{player.name}}<span>{{player.score}}</span></li>
-          {{else}}
-            <li>{{player.name}}<span>{{player.score}}</span></li>
-          {{/if}}
-        {{/each}}
-      </ul>
+      <div class="player-list">
+        <ul>
+          {{#each players as |player index|}}
+            {{#if (eq index whosTurn)}}
+              <li class="active">{{player.name}}<span>{{player.score}}</span></li>
+            {{else}}
+              <li>{{player.name}}<span>{{player.score}}</span></li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
       <h1>Game Over.</h1>
       <h2>{{winner}} wins!</h2>
       <button {{action 'newGame'}}>New Game</button>
