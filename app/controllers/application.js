@@ -28,12 +28,30 @@ export default Ember.Controller.extend({
       });
     },
     addPlayer: function(){
-      if(this.get('players').length == 3){
-        let playerName = this.get('playerName');
-        this.get('players').pushObject({name: playerName, score: 0 });
-      } else {
-        alert("Demo needs 4 players");
+      let player1Name = this.get('player1Name'),
+          player2Name = this.get('player2Name'),
+          player3Name = this.get('player3Name'),
+          player4Name = this.get('player4Name');
+
+
+      if( player1Name == '' || player1Name == null || player1Name == undefined){
+        player1Name = 'Player 1';
       }
+      if( player2Name == '' || player2Name == null || player2Name == undefined){
+        player2Name = 'Player 2';
+      }
+      if( player3Name == '' || player3Name == null || player3Name == undefined){
+        player3Name = 'Player 3';
+      }
+      if( player4Name == '' || player4Name == null || player4Name == undefined){
+        player4Name = 'Player 4';
+      }
+
+      this.set('players', []);
+      this.get('players').pushObject({name: player1Name, score: 0 });
+      this.get('players').pushObject({name: player2Name, score: 0 });
+      this.get('players').pushObject({name: player3Name, score: 0 });
+      this.get('players').pushObject({name: player4Name, score: 0 });
     },
     nextTurn: function(){
       let turn = this.get('whosTurn'),
@@ -71,6 +89,7 @@ export default Ember.Controller.extend({
     },
     firstRound: function(){
       this.send('newChallenge');
+      this.send('addPlayer');
       this.set('gameStarted', true);
       console.log("start game");
     },
