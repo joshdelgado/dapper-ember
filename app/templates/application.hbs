@@ -2,11 +2,24 @@
   <div class="start-screen {{if gameStarted "hidden"}}">
     <div class="start-screen-inner">
       <h1>Dapper</h1>
-      {{input value=player1Name placeholder="Player 1"}}
-      {{input value=player2Name placeholder="Player 2"}}
-      {{input value=player3Name placeholder="Player 3"}}
-      {{input value=player4Name placeholder="Player 4"}}
-      <button {{action 'firstRound'}}>Start Game</button>
+      <ul class="start-screen-num-players">
+        <li><button {{action 'setNumPlayers' 2}}>2</button></li>
+        <li><button {{action 'setNumPlayers' 3}}>3</button></li>
+        <li><button {{action 'setNumPlayers' 4}}>4</button></li>
+      </ul>
+      {{#if (gte numPlayers 2)}}
+        {{input value=player1Name placeholder="Player 1"}}
+        {{input value=player2Name placeholder="Player 2"}}
+      {{/if}}
+      {{#if (gte numPlayers 3)}}
+        {{input value=player3Name placeholder="Player 3"}}
+      {{/if}}
+      {{#if (eq numPlayers 4)}}
+        {{input value=player4Name placeholder="Player 4"}}
+      {{/if}}
+      {{#if (not-eq numPlayers 1)}}
+        <button {{action 'firstRound'}}>Start Game</button>
+      {{/if}}
     </div>
   </div>
   <div class="end-screen {{if gameEnded "active" "hidden"}}">

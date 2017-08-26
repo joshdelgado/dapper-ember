@@ -2,10 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   gameStarted: false,
-  gameStarted: false,
+  gameEnded: false,
   name: '',
   description: '',
   image: '',
+  numPlayers: 1,
   whosTurn: 0,
   currentRound: 1,
   winner: '',
@@ -27,11 +28,15 @@ export default Ember.Controller.extend({
         _this.set('image', challenge.image);
       });
     },
+    setNumPlayers: function(num){
+      this.set('numPlayers', num);
+    },
     addPlayer: function(){
       let player1Name = this.get('player1Name'),
           player2Name = this.get('player2Name'),
           player3Name = this.get('player3Name'),
-          player4Name = this.get('player4Name');
+          player4Name = this.get('player4Name'),
+          num = this.get('numPlayers');
 
 
       if( player1Name == '' || player1Name == null || player1Name == undefined){
@@ -48,10 +53,16 @@ export default Ember.Controller.extend({
       }
 
       this.set('players', []);
-      this.get('players').pushObject({name: player1Name, score: 0 });
-      this.get('players').pushObject({name: player2Name, score: 0 });
-      this.get('players').pushObject({name: player3Name, score: 0 });
-      this.get('players').pushObject({name: player4Name, score: 0 });
+      if( num >= 2 ){
+        this.get('players').pushObject({name: player1Name, score: 0 });
+        this.get('players').pushObject({name: player2Name, score: 0 });
+      }
+      if( num >= 3 ){
+        this.get('players').pushObject({name: player3Name, score: 0 });
+      }
+      if( num == 4 ){
+        this.get('players').pushObject({name: player4Name, score: 0 });
+      }
     },
     nextTurn: function(){
       let turn = this.get('whosTurn'),
@@ -103,6 +114,7 @@ export default Ember.Controller.extend({
       this.set('description', '');
       this.set('image', '');
       this.set('whosTurn', 0);
+      this.set('numPlayers', 1);
       this.set('currentRound', 1);
       this.set('gameStarted', false);
       this.set('gameEnded', false);
