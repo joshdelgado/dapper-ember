@@ -2,102 +2,102 @@
 	"challenges" : [{
 		"name" : "Big 1",
 		"description" : "This is the first description",
-		"image" : "challenge_image_1.png"
+		"image" : "drifter.gif"
 	},{
 		"name" : "Big 2",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_2.png"
+		"image" :  "flapper.gif"
 	},{
 		"name" : "Big 3",
 		"description" : "This is the third description",
-		"image" : "challenge_image_3.png"
+		"image" : "gameskeeper.gif"
 	},{
 		"name" : "Big 4",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_4.png"
+		"image" :  "intellect.gif"
 	},{
 		"name" : "Big 5",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_5.png"
+		"image" : "strongman.gif"
 	},{
 		"name" : "Big 6",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_1.png"
+		"image" :  "drifter.gif"
 	},{
 		"name" : "Big 7",
 		"description" : "This is the third description",
-		"image" : "challenge_image_2.png"
+		"image" : "flapper.gif"
 	},{
 		"name" : "Big 8",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_3.png"
+		"image" :  "gameskeeper.gif"
 	},{
 		"name" : "Big 9",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_4.png"
+		"image" : "intellect.gif"
 	},{
 		"name" : "Big 10",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_5.png"
+		"image" :  "strongman.gif"
 	},{
 		"name" : "Big 11",
 		"description" : "This is the third description",
-		"image" : "challenge_image_1.png"
+		"image" : "drifter.gif"
 	},{
 		"name" : "Big 12",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_2.png"
+		"image" :  "flapper.gif"
 	},{
 		"name" : "Big 13",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_3.png"
+		"image" : "gameskeeper.gif"
 	},{
 		"name" : "Big 14",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_4.png"
+		"image" :  "intellect.gif"
 	},{
 		"name" : "Big 15",
 		"description" : "This is the third description",
-		"image" : "challenge_image_5.png"
+		"image" : "strongman.gif"
 	},{
 		"name" : "Big 16",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_1.png"
+		"image" :  "drifter.gif"
 	},{
 		"name" : "Big 17",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_2.png"
+		"image" : "flapper.gif"
 	},{
 		"name" : "Big 18",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_3.png"
+		"image" :  "gameskeeper.gif"
 	},{
 		"name" : "Big 19",
 		"description" : "This is the third description",
-		"image" : "challenge_image_4.png"
+		"image" : "intellect.gif"
 	},{
 		"name" : "Big 20",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_5.png"
+		"image" :  "strongman.gif"
 	},{
 		"name" : "Big 21",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_1.png"
+		"image" : "drifter.gif"
 	},{
 		"name" : "Big 22",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_2.png"
+		"image" :  "flapper.gif"
 	},{
 		"name" : "Big 23",
 		"description" : "This is the third description",
-		"image" : "challenge_image_3.png"
+		"image" : "gameskeeper.gif"
 	},{
 		"name" : "Big 24",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_4.png"
+		"image" :  "intellect.gif"
 	},{
 		"name" : "Big 25",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_5.png"
+		"image" : "strongman.gif"
 	}]
 }

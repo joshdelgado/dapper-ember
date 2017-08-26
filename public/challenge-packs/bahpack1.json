@@ -2,22 +2,22 @@
 	"challenges" : [{
 		"name" : "Butt 1",
 		"description" : "This is the first description",
-		"image" : "challenge_image_1.png"
+		"image" : "drifter.gif"
 	},{
 		"name" : "Butt 2",
 		"description" : "This is the second description",
-		"image" :  "challenge_image_2.png"
+		"image" :  "flapper.gif"
 	},{
 		"name" : "Butt 3",
 		"description" : "This is the third description",
-		"image" : "challenge_image_3.png"
+		"image" : "gameskeeper.gif"
 	},{
 		"name" : "Butt 4",
 		"description" : "This is the fourth description",
-		"image" :  "challenge_image_4.png"
+		"image" :  "intellect.gif"
 	},{
 		"name" : "Butt 5",
 		"description" : "This is the fifth description",
-		"image" : "challenge_image_5.png"
+		"image" : "strongman.gif"
 	}]
 }

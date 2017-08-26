@@ -80,7 +80,7 @@ export default Ember.Controller.extend({
 
       //console.log(turn);
 
-      if(nextRound >= 2 && turn == this.get('players').length - 1){
+      if(nextRound >= 3 && turn == this.get('players').length - 1){
         /*let p1 = this.get('players').objectAt(0).score,
             p2 = this.get('players').objectAt(1).score,
             p3 = this.get('players').objectAt(2).score,
