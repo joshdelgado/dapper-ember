@@ -1,23 +1,216 @@
 {
 	"challenges" : [{
-		"name" : "Butt 1",
-		"description" : "This is the first description",
+		"name" : "Slowwww Dance",
+		"description" : "Slow Dance by yourself in the corner softly caressing your shoulders for 2 minutes (or one whole song).  Don’t acknowledge anyone!",
 		"image" : "drifter.gif"
 	},{
-		"name" : "Butt 2",
-		"description" : "This is the second description",
-		"image" :  "flapper.gif"
+		"name" : "Now That's A Muscle!",
+		"description" : "Get a photo of yourself while feeling the muscle of a stranger and yelling out “Now That's A Muscle!!!”.",
+		"image" :  "strongman.gif"
 	},{
-		"name" : "Butt 3",
-		"description" : "This is the third description",
+		"name" : "Lather Me Up",
+		"description" : "Dance for 2 minutes while acting like you are lathering yourself up for a bath!  Do it soft and sexy raaawrrr.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "T-Rex Spotting",
+		"description" : "T-Rex's vision is based on movement!  Remain STILL for 2 whole minutes.  You can blink, but if you flinch you fail!",
+		"image" :  "drifter.gif"
+	},{
+		"name" : "Reindeer Who?",
+		"description" : "Name 5 of Santa's Reindeer in 30 seconds.  Ready Go!",
+		"image" : "intellect.gif"
+	},{
+		"name" : "Embrassez moi",
+		"description" : "Get a kiss on the cheek from a complete stranger.",
+		"image" :  "drifter.gif"
+	},{
+		"name" : "I Choose You!",
+		"description" : "Create a challenge for the player of your choosing.",
 		"image" : "gameskeeper.gif"
 	},{
-		"name" : "Butt 4",
-		"description" : "This is the fourth description",
-		"image" :  "intellect.gif"
+		"name" : "That's My Tune",
+		"description" : "Sing your favorite childhood song for all to hear and make it good!  ",
+		"image" :  "drifter.gif"
 	},{
-		"name" : "Butt 5",
-		"description" : "This is the fifth description",
+		"name" : "How I Mate",
+		"description" : "Shout out your BEST mating call.  Don't hold back!",
+		"image" :  "strongman.gif"
+	},{
+		"name" : "Spank You",
+		"description" : "Get spanked 3x by a complete stranger.",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Feels Good!",
+		"description" : "Do 10 pushups while calling out “OOOOoooo Yeah!  Look how good I look!  Everybody look!”",
 		"image" : "strongman.gif"
+	},{
+		"name" : "Landing On The Moon",
+		"description" : "Moon Walk around the bar 1x, spin and strike a pose.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Traveling Clapper",
+		"description" : "Giving your best disco walk while clapping above your head.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Great Lakes",
+		"description" : "Name all 5 of the Great Lakes",
+		"image" : "intellect.gif"
+	},{
+		"name" : "I'm Semi Famous",
+		"description" : "Get someone to autograph your chest.",
+		"image" : "drifter.gif"
+	},{
+		"name" : "I Got Gains",
+		"description" : "Get a photo of a stranger feeling your muscle while flexing!",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Become A Lord",
+		"description" : "Give the table your best Lord Of The Dance impression.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "All Access",
+		"description" : "Let the player to your right text one person in your phone whatever they want!",
+		"image" : "gameskeeper.gif"
+	},{
+		"name" : "Twerk it",
+		"description" : "Can you twerk?  It doesn't matter.  You're about to try it for 1 minute.  Ready Go!",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Quick High Five!",
+		"description" : "You sir have 30 seconds to get 5 high fives.  Ready Go!",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Muscle Man",
+		"description" : "Muscle Man Contest!  Stand in the corner flexing your muscles for 1 minute.",
+		"image" : "strongman.gif"
+	},{
+		"name" : "I Am A Robot",
+		"description" : "Do your best robot dance for 2 minutes.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Soooo Much Water",
+		"description" : "Name all 5 Oceans in 30 seconds",
+		"image" : "intellect.gif"
+	},{
+		"name" : "Mime Challenge!",
+		"description" : "You are a mime.  The table chooses the scene and you must act it out for 2min.  Ex. Stuck in a box",
+		"image" : "drifter.gif"
+	},{
+		"name" : "All Access",
+		"description" : "Let the player to your right text one person in your phone whatever they want!",
+		"image" : "gameskeeper.gif"
+	},{
+		"name" : "I Can Also Sing",
+		"description" : "Give us your BEST Opera impression and make it good!",
+		"image" : "flapper.gif"
+	},{
+		"name" : "P-I-M-P",
+		"description" : "Take a photo with two people kissing you on the cheek.",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Jumping Jack",
+		"description" : "Let's see you do 10 jumping jacks while yelling out “I am so getting beefed up!”",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Sweet Whisper",
+		"description" : "Approach a stranger with a serious face and say “It's good to see you again”  Then whisper “The time machine worked”.",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Fabulous",
+		"description" : "Approach a stranger, point at them from head to toe and say “Fabulous”.  Snap your fingers then walk away.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "I Didn't Post That!",
+		"description" : "Player to your right gets to post whatever they want on your social media account.",
+		"image" : "gameskeeper.gif"
+	},{
+		"name" : "Pose Off!",
+		"description" : "Roll up your sleeves and do a 1 minute gun show.  Give us your best photos.",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Shakespeare",
+		"description" : "Finish This Line: O Romeo, Romeo,wh..... ",
+		"image" : "intellect.gif"
+	},{
+		"name" : "Pushing Down Gravity",
+		"description" : "It's Push Up TIME!  Get down on the ground maggot and give me 10 pushups!",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Marco!",
+		"description" : "Yell Out “Marco”and get at least one stranger to yell out “Polo”.",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Yee Haw!",
+		"description" : "Saddle up partner.  We are about to see you ride your 'fake horse' around the room!",
+		"image" : "flapper.gif"
+	},{
+		"name" : "I Didn't Post That!",
+		"description" : "Player to your left gets to post whatever they want on your social media account.",
+		"image" : "gameskeeper.gif"
+	},{
+		"name" : "You Even Lift?",
+		"description" : "You call those muscles? Get a stranger to take a photo of you flexing like a professional wrestler.",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Marry Me",
+		"description" : "Get a photo of yourself proposing to a stranger.  Make it good!",
+		"image" : "drifter.gif"
+	},{
+		"name" : "I Choose You!",
+		"description" : "Create a challenge for the player of your choosing.",
+		"image" : "gameskeeper.gif"
+	},{
+		"name" : "Oh That's Sexy",
+		"description" : "Get out on the dance floor, hands above your head and begin to give the sexiest dance you can come up with.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Base-ketball",
+		"description" : "Player has 1 minute to name 10 professional basketball teams.  Ready Go!",
+		"image" : "intellect.gif"
+	},{
+		"name" : "The British Are Coming",
+		"description" : "Ride your invisible horse around the bar yelling “The British Are Coming!”",
+		"image" : "drifter.gif"
+	},{
+		"name" : "Pop A Squat",
+		"description" : "Get into position and give us 10 squats!",
+		"image" : "strongman.gif"
+	},{
+		"name" : "Natural Spinner",
+		"description" : "I LOVE to spin don't you?! Get somewhere with room and spin 25x in a row.",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Tattoo Artist",
+		"description" : "Roll up your sleeves.  You have to get 10 strangers to autograph your arms. Ready Go!",
+		"image" : "drifter.gif"
+	},{
+		"name" : "National Pride",
+		"description" : "Stand up and sing the National Anthem out loud for all to hear!",
+		"image" : "flapper.gif"
+	},{
+		"name" : "Planets Aligned",
+		"description" : "Name all 9 of the planets in our solar system.  Countdown 1 minute.  Ready Go!",
+		"image" : "intellect.gif"
+	},{
+		"name" : "Negative Nancy",
+		"description" : "Go around the table and say something negative about each person.",
+		"image" : "gameskeeper.gif"
+	}],
+	"piker" : [{
+		"name" : "Meeeeyow",
+		"description" : "Don't you love kitties?!  You're about to become one.  Players get draw whiskers on Piker's face.",
+		"image" : "piker.gif"
+	},{
+		"name" : "Glamor Shot",
+		"description" : "Table get's to style Piker and do a full photoshoot session with him, posting everything to his social media.",
+		"image" : "piker.gif"
+	},{
+		"name" : "Love That Scene",
+		"description" : "Pick your favorite movie scene and act it out as best as you can.  Make it good because your friends will be recording it!  Action!  ",
+		"image" : "piker.gif"
+	},{
+		"name" : "Artist Scene",
+		"description" : "Draw on a napkin or piece of paper.  Finished with your art?  Now you have to sell it to a stranger for $1.",
+		"image" : "piker.gif"
 	}]
 }

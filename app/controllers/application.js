@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
   actions: {
     newChallenge: function(){
       let _this = this;
-      $.getJSON("/challenge-packs/hellohollywood.json", function(data){
+      $.getJSON("/challenge-packs/bahpack1.json", function(data){
         let num = Math.floor(Math.random() * data['challenges'].length),
             challenge = data['challenges'][num];
 
