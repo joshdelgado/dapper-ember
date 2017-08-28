@@ -1,7 +1,10 @@
 <div class="app-wrap">
   <div class="start-screen {{if gameStarted "hidden"}}">
-    <div class="start-screen-inner">
+    <div class="start-screen-inner title-card">
       <h1>Dapper</h1>
+    </div>
+    <div class="start-screen-inner player-card">
+      <h2>How many players?</h2>
       <ul class="start-screen-num-players">
         <li><button {{action 'setNumPlayers' 2}}>2</button></li>
         <li><button {{action 'setNumPlayers' 3}}>3</button></li>
@@ -35,8 +38,10 @@
           {{/each}}
         </ul>
       </div>
-      <h1>Game Over.</h1>
-      <h2>{{winner}} wins!</h2>
+      <div class="winner-declaration">
+        <h1>Game Over.</h1>
+        <h2>{{winner}} wins!</h2>
+      </div>
       <button {{action 'newGame'}}>New Game</button>
     </div>
   </div>
@@ -71,6 +76,5 @@
       <button {{action "addPoint"}}>Success</button>
     </div>
 
-    {{game-footer}}
   </div>
 </div>

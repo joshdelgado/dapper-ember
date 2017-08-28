@@ -1,3 +1,15 @@
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 /**************************
 * Global
 ***************************/
@@ -15,7 +27,11 @@
   position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 15px #000;
-  box-shadow: 0px 0px 15px #000;
+  box-shadow: 0px 0px 15px #000; }
+
+.app-window {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,11 +46,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .app-wrap > div {
+  .app-window > div {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
-  .app-wrap > div:nth-child(2) {
+  .app-window > div.challenge-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -60,6 +76,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 9;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -75,7 +92,111 @@
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .start-screen.hidden {
+    display: none; }
+  .start-screen input {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    height: 58px; }
+  .start-screen button {
+    width: 100%;
+    background-color: #888;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px; }
+    .start-screen button:hover {
+      background-color: #555; }
+
+.end-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc; }
+  .end-screen.hidden {
+    display: none; }
+
+.start-screen-inner,
+.end-screen-inner {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+  .start-screen-inner.title-card,
+  .end-screen-inner.title-card {
+    position: absolute;
+    z-index: 9;
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+  .start-screen-inner.player-card,
+  .end-screen-inner.player-card {
+    position: absolute;
+    z-index: 5;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+  .start-screen-inner h1,
+  .end-screen-inner h1 {
+    margin: 0;
+    font-size: 3rem; }
+
+.start-screen-num-players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px; }
+  .start-screen-num-players li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc(33% - 8px);
+    flex: 0 1 calc(33% - 8px);
+    text-align: center;
+    background-color: #aaa; }
 
 /**************************
 * Header
@@ -128,6 +249,8 @@
     color: #fff;
     font-size: 2rem;
     letter-spacing: 1px; }
+    .buttons-wrap button:hover {
+      background-color: #555; }
 
 .challenge-wrap {
   text-align: center;
@@ -165,7 +288,7 @@
     border-bottom: 1px solid #000; }
     .challenge-wrap .challenge-image img {
       max-width: 100%;
-      width: 80%;
+      width: 100%;
       height: auto;
       display: block;
       margin: 0 auto; }
@@ -178,6 +301,8 @@
   color: #fff;
   font-size: 2rem;
   letter-spacing: 1px; }
+  .new-challenge-btn:hover {
+    background-color: #555; }
 
 .game-footer {
   display: -webkit-box;
