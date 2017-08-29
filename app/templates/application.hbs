@@ -46,6 +46,24 @@
     </div>
   </div>
 
+  <div class="round-screen {{if roundScreen "active" "hidden"}}">
+    <div class="round-screen-inner">
+      <div class="player-list">
+        <ul>
+          {{#each players as |player index|}}
+            {{#if (eq index whosTurn)}}
+              <li class="active">{{player.name}}<span>{{player.score}}</span></li>
+            {{else}}
+              <li>{{player.name}}<span>{{player.score}}</span></li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      <h1>Round {{currentRound}}</h1>
+      <button {{action 'nextRound'}}>Start Round</button>
+    </div>
+  </div>
+
   <div class="app-window">
     <div class="player-list">
       <ul>

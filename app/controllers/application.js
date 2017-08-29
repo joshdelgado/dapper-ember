@@ -3,6 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   gameStarted: false,
   gameEnded: false,
+  roundScreen: false,
+  totalRounds: 3,
   name: '',
   description: '',
   image: '',
@@ -64,39 +66,39 @@ export default Ember.Controller.extend({
         this.get('players').pushObject({name: player4Name, score: 0 });
       }
     },
+    nextRound: function(){
+      this.set('roundScreen', false);
+    },
     nextTurn: function(){
       let turn = this.get('whosTurn'),
           numPlayers = this.get('players').length - 1,
           nextTurn = turn + 1,
           round = this.get('currentRound'),
           nextRound = round + 1,
-          winnerNum = 0;
+          winnerNum = 0,
+          totalRounds = this.get('totalRounds');
 
       if(turn >= numPlayers){
         nextTurn = 0;
-        this.set('currentRound', nextRound);
-        console.log("Round "+round+" Complete");
-      }
 
-      //console.log(turn);
+        if(nextRound >= totalRounds && turn == this.get('players').length - 1){
+          let arr = [];
 
-      if(nextRound >= 3 && turn == this.get('players').length - 1){
-        /*let p1 = this.get('players').objectAt(0).score,
-            p2 = this.get('players').objectAt(1).score,
-            p3 = this.get('players').objectAt(2).score,
-            p4 = this.get('players').objectAt(3).score;*/
-        let arr = [];
+          for( var i = 0; i < this.get('players').length; i++){
+            arr.push( this.get('players').objectAt(i).score );
+          }
+          console.log(arr);
+          let winnerNum = arr.indexOf( Math.max(...arr) ),
+              winner = this.get('players').objectAt(winnerNum).name;
 
-        for( var i = 0; i < this.get('players').length; i++){
-          arr.push( this.get('players').objectAt(i).score );
+          this.set('winner', winner);
+          this.send('gameOver');
+          //alert("Game Over. "+this.get('winner')+" wins!");
+        } else {
+          this.set('currentRound', nextRound);
+          this.set('roundScreen', true);
         }
-        console.log(arr);
-        let winnerNum = arr.indexOf( Math.max(...arr) ),
-            winner = this.get('players').objectAt(winnerNum).name;
 
-        this.set('winner', winner);
-        this.send('gameOver');
-        //alert("Game Over. "+this.get('winner')+" wins!");
       }
 
       this.set('whosTurn', nextTurn);

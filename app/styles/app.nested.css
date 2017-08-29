@@ -2,13 +2,15 @@
   from {
     opacity: 1; }
   to {
-    opacity: 0; } }
+    opacity: 0;
+    z-index: -9; } }
 
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    z-index: 9; } }
 
 /**************************
 * Global
@@ -79,6 +81,7 @@
   z-index: 9;
   height: 100%;
   width: 100%;
+  background-color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +162,7 @@
     position: absolute;
     z-index: 9;
     animation-name: fadeOut;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-delay: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; }
@@ -167,15 +170,39 @@
   .end-screen-inner.player-card {
     position: absolute;
     z-index: 5;
+    opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-delay: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; }
   .start-screen-inner h1,
   .end-screen-inner h1 {
     margin: 0;
     font-size: 3rem; }
+  .start-screen-inner input,
+  .end-screen-inner input {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+  .start-screen-inner button,
+  .end-screen-inner button {
+    background-color: #888;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px; }
+    .start-screen-inner button:hover,
+    .end-screen-inner button:hover {
+      background-color: #555; }
+
+.end-screen-inner {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0; }
 
 .start-screen-num-players {
   display: -webkit-box;

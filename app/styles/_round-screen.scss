@@ -1,0 +1,31 @@
+.round-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-9;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+
+  &.active{
+    z-index: 9;
+  }
+}
+
+.round-screen-inner{
+  height:100%;
+  width:100%;
+  background-color: #ccc;
+  text-align: center;
+  padding:0;
+  @include flex;
+  @include flex-vertical;
+  @include flex-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+
+  button{
+    @include button-style;
+  }
+}
