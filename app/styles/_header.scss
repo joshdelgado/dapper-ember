@@ -3,7 +3,7 @@
 ***************************/
 .player-list{
   width:100%;
-  background-color: #ddd;
+  background-color: $brown;
 
   ul{
     @include flex;
@@ -13,9 +13,12 @@
     list-style: none;
 
     li{
-      font-weight: bold;
+      @include oswald;
       text-align: center;
-      padding: 10px 0 5px;
+      padding: 15px 0 10px;
+      color: $white;
+      border-right:2px solid rgba(0,0,0,0.1);
+      border-bottom: 5px solid $taupe;
       -webkit-box-flex: 0;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
@@ -23,12 +26,15 @@
       span{
         display: block;
         font-size: 2em;
-        padding-top:5px;
-        color: red;
+        padding-top:8px;
+        color: $tang;
       }
     }
     li.active{
-      background-color: #aaa;
+      border-bottom:5px solid $blue;
+    }
+    li:last-child{
+      border-right: none;
     }
   }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 @keyframes fadeOut {
   from {
     opacity: 1; }
@@ -11,6 +12,18 @@
   to {
     opacity: 1;
     z-index: 9; } }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    z-index: 9; }
+  75% {
+    opacity: 1;
+    z-index: 9; }
+  100% {
+    opacity: 0; } }
 
 /**************************
 * Global
@@ -81,7 +94,7 @@
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: #ccc;
+  background-color: #bab39e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +114,11 @@
   justify-content: center; }
   .start-screen.hidden {
     display: none; }
+  .start-screen img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto; }
   .start-screen input {
     display: block;
     margin: 0 auto 10px;
@@ -110,14 +128,17 @@
     height: 58px; }
   .start-screen button {
     width: 100%;
-    background-color: #888;
+    background-color: #715c3f;
     border: 0;
     padding: 10px;
-    color: #fff;
+    color: #fafafa;
     font-size: 2rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
     .start-screen button:hover {
-      background-color: #555; }
+      background-color: #99917a; }
+    .start-screen button:last-child {
+      border-right: none; }
 
 .end-screen {
   position: absolute;
@@ -126,7 +147,7 @@
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: #ccc; }
+  background-color: #bab39e; }
   .end-screen.hidden {
     display: none; }
 
@@ -134,7 +155,7 @@
 .end-screen-inner {
   height: 100%;
   width: 100%;
-  background-color: #ccc;
+  background-color: #bab39e;
   text-align: center;
   padding: 20px;
   display: -webkit-box;
@@ -179,24 +200,23 @@
   .start-screen-inner h1,
   .end-screen-inner h1 {
     margin: 0;
-    font-size: 3rem; }
-  .start-screen-inner input,
-  .end-screen-inner input {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; }
+    font-size: 3rem;
+    color: #005c7c; }
   .start-screen-inner button,
   .end-screen-inner button {
-    background-color: #888;
+    background-color: #715c3f;
     border: 0;
     padding: 10px;
-    color: #fff;
+    color: #fafafa;
     font-size: 2rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
     .start-screen-inner button:hover,
     .end-screen-inner button:hover {
-      background-color: #555; }
+      background-color: #99917a; }
+    .start-screen-inner button:last-child,
+    .end-screen-inner button:last-child {
+      border-right: none; }
 
 .end-screen-inner {
   -webkit-box-pack: justify;
@@ -225,12 +245,62 @@
     text-align: center;
     background-color: #aaa; }
 
+.round-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc; }
+  .round-screen.active {
+    z-index: 9; }
+
+.round-screen-inner {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+  .round-screen-inner button {
+    background-color: #715c3f;
+    border: 0;
+    padding: 10px;
+    color: #fafafa;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    .round-screen-inner button:hover {
+      background-color: #99917a; }
+    .round-screen-inner button:last-child {
+      border-right: none; }
+
 /**************************
 * Header
 ***************************/
 .player-list {
   width: 100%;
-  background-color: #ddd; }
+  background-color: #715c3f; }
   .player-list ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -247,6 +317,9 @@
       font-weight: bold;
       text-align: center;
       padding: 10px 0 5px;
+      color: #fafafa;
+      border-right: 2px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 5px solid #99917a;
       -webkit-box-flex: 0;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto; }
@@ -254,9 +327,11 @@
         display: block;
         font-size: 2em;
         padding-top: 5px;
-        color: red; }
+        color: #f46643; }
     .player-list ul li.active {
-      background-color: #aaa; }
+      border-bottom: 5px solid #005c7c; }
+    .player-list ul li:last-child {
+      border-right: none; }
 
 .buttons-wrap {
   display: -webkit-box;
@@ -270,14 +345,17 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    background-color: #888;
+    background-color: #715c3f;
     border: 0;
     padding: 10px;
-    color: #fff;
+    color: #fafafa;
     font-size: 2rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
     .buttons-wrap button:hover {
-      background-color: #555; }
+      background-color: #99917a; }
+    .buttons-wrap button:last-child {
+      border-right: none; }
 
 .challenge-wrap {
   text-align: center;
@@ -300,8 +378,10 @@
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .challenge-wrap .challenge-info {
-    border-bottom: 1px solid #000;
     padding: 20px 10px 10px;
+    background-color: #bab39e;
+    border-top: 5px solid #005c7c;
+    border-bottom: 5px solid #005c7c;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto; }
@@ -311,8 +391,7 @@
   .challenge-wrap .challenge-image {
     -webkit-box-flex: 1;
     -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    border-bottom: 1px solid #000; }
+    flex: 0 1 auto; }
     .challenge-wrap .challenge-image img {
       max-width: 100%;
       width: 100%;
@@ -322,14 +401,17 @@
 
 .new-challenge-btn {
   width: 100%;
-  background-color: #888;
+  background-color: #715c3f;
   border: 0;
   padding: 10px;
-  color: #fff;
+  color: #fafafa;
   font-size: 2rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
   .new-challenge-btn:hover {
-    background-color: #555; }
+    background-color: #99917a; }
+  .new-challenge-btn:last-child {
+    border-right: none; }
 
 .game-footer {
   display: -webkit-box;

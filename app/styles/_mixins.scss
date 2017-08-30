@@ -31,15 +31,26 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@mixin oswald{
+  font-family: $font-title;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+}
 @mixin button-style{
-  background-color: #888;
+  background-color: $brown;
   border: 0;
-  padding:10px;
-  color: #fff;
+  padding:15px 10px;
+  color: $white;
   font-size: 2rem;
   letter-spacing: 1px;
+  border-right:2px solid rgba(0,0,0,0.1);
+  @include oswald;
 
   &:hover{
-    background-color: #555;
+    background-color: $taupe;
+  }
+  &:last-child{
+    border-right: none;
   }
 }
