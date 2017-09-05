@@ -104,12 +104,6 @@
     font-size: 2rem;
     margin: 20px 0 0;
   }
-  .start-btn button{
-    opacity: 0;
-  }
-  .start-btn.active button{
-    opacity: 1;
-  }
   button{
     @include button-style;
   }

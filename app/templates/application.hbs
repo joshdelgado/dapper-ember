@@ -8,12 +8,6 @@
         <h2>Dapper</h2>
       </div>
       <div class="start-screen-num-players-wrap">
-        <!--<h2>How many players?</h2>
-        <ul class="start-screen-num-players">
-          <li><button {{action 'setNumPlayers' 2}}>2</button></li>
-          <li><button {{action 'setNumPlayers' 3}}>3</button></li>
-          <li><button {{action 'setNumPlayers' 4}}>4</button></li>
-        </ul>-->
         {{input value=player1Name placeholder="Player 1"}}
         {{input value=player2Name placeholder="Player 2"}}
         {{#if (gte numPlayers 3)}}
@@ -27,7 +21,7 @@
           <a {{action 'morePlayers'}} class="more-player-btn">+</a>
         </div>
       </div>
-      <div class="start-btn {{if (not-eq numPlayers 1) "active"}}">
+      <div class="start-btn">
         <button {{action 'firstRound'}}>Start Game</button>
       </div>
     </div>
