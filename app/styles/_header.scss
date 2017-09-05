@@ -15,27 +15,40 @@
     li{
       @include oswald;
       text-align: center;
-      padding: 15px 0 10px;
+      padding: 10px 5px;
       color: $white;
       border-right:2px solid rgba(0,0,0,0.1);
-      border-bottom: 5px solid $taupe;
-      -webkit-box-flex: 0;
+      -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
 
-      span{
+      > span{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         display: block;
-        font-size: 2em;
-        padding-top:8px;
-        color: $tang;
+        margin: 0 auto;
+
+        > span{
+          display: block;
+          font-size: 1.25em;
+          padding-top:8px;
+          color: $tang;
+        }
       }
-    }
-    li.active{
-      border-bottom:5px solid $blue;
     }
     li:last-child{
       border-right: none;
     }
+  }
+}
+.app-window .player-list ul{
+  li{
+    opacity: 0.5;
+  }
+  li.active{
+    background-color: $blue;
+    opacity:1;
   }
 }
 .buttons-wrap{

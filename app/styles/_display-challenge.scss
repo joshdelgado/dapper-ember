@@ -8,10 +8,9 @@
   @include flex-vertical;
 
   .challenge-info{
-    padding:20px 10px 10px;
-    background-color: $sand;
-  border-top: 5px solid $blue;
-  border-bottom: 5px solid $blue;
+    padding:20px 15px 10px;
+    background-color: $blue;
+    color: $white;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;

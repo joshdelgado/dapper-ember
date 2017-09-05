@@ -5,7 +5,7 @@
   z-index:9;
   height: 100%;
   width: 100%;
-  background-color: $sand;
+  background-color: $blue;
   @include flex;
   @include flex-vertical;
   @include flex-center;
@@ -40,7 +40,7 @@
   z-index:9;
   height: 100%;
   width: 100%;
-  background-color: $sand;
+  background-color: $blue;
 
   &.hidden{
     display: none;
@@ -50,7 +50,8 @@
 .end-screen-inner{
   height:100%;
   width:100%;
-  background-color: $sand;
+  background-color: $blue;
+  color: $white;
   text-align: center;
   padding:20px;
   @include flex;
@@ -83,7 +84,7 @@
   h1{
     margin:0;
     font-size: 3rem;
-    color: $blue;
+    color: $white;
   }
   button{
     @include button-style;

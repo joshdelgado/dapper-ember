@@ -32,9 +32,9 @@
         <ul>
           {{#each players as |player index|}}
             {{#if (eq index whosTurn)}}
-              <li class="active">{{player.name}}<span>{{player.score}}</span></li>
+              <li class="active"><span>{{player.name}}<span>{{player.score}}</span></span></li>
             {{else}}
-              <li>{{player.name}}<span>{{player.score}}</span></li>
+              <li><span>{{player.name}}<span>{{player.score}}</span></span></li>
             {{/if}}
           {{/each}}
         </ul>
@@ -52,11 +52,7 @@
       <div class="player-list">
         <ul>
           {{#each players as |player index|}}
-            {{#if (eq index whosTurn)}}
-              <li class="active">{{player.name}}<span>{{player.score}}</span></li>
-            {{else}}
-              <li>{{player.name}}<span>{{player.score}}</span></li>
-            {{/if}}
+              <li><span>{{player.name}}<span>{{player.score}}</span></span></li>
           {{/each}}
         </ul>
       </div>
@@ -70,9 +66,9 @@
       <ul>
         {{#each players as |player index|}}
           {{#if (eq index whosTurn)}}
-            <li class="active">{{player.name}}<span>{{player.score}}</span></li>
+            <li class="active"><span>{{player.name}}</span></li>
           {{else}}
-            <li>{{player.name}}<span>{{player.score}}</span></li>
+            <li><span>{{player.name}}</span></li>
           {{/if}}
         {{/each}}
       </ul>

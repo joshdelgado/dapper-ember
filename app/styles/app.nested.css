@@ -87,6 +87,15 @@
 .container {
   padding: 5px 10px; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1; }
+
+p {
+  font-family: helvetica, arial, sans-serif; }
+
 .start-screen {
   position: absolute;
   top: 0;
@@ -94,7 +103,7 @@
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: #bab39e;
+  background-color: #005c7c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,11 +139,15 @@
     width: 100%;
     background-color: #715c3f;
     border: 0;
-    padding: 10px;
+    padding: 15px 10px;
     color: #fafafa;
     font-size: 2rem;
     letter-spacing: 1px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    font-family: "Oswald", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1; }
     .start-screen button:hover {
       background-color: #99917a; }
     .start-screen button:last-child {
@@ -147,7 +160,7 @@
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: #bab39e; }
+  background-color: #005c7c; }
   .end-screen.hidden {
     display: none; }
 
@@ -155,7 +168,8 @@
 .end-screen-inner {
   height: 100%;
   width: 100%;
-  background-color: #bab39e;
+  background-color: #005c7c;
+  color: #fafafa;
   text-align: center;
   padding: 20px;
   display: -webkit-box;
@@ -201,16 +215,20 @@
   .end-screen-inner h1 {
     margin: 0;
     font-size: 3rem;
-    color: #005c7c; }
+    color: #fafafa; }
   .start-screen-inner button,
   .end-screen-inner button {
     background-color: #715c3f;
     border: 0;
-    padding: 10px;
+    padding: 15px 10px;
     color: #fafafa;
     font-size: 2rem;
     letter-spacing: 1px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    font-family: "Oswald", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1; }
     .start-screen-inner button:hover,
     .end-screen-inner button:hover {
       background-color: #99917a; }
@@ -285,11 +303,15 @@
   .round-screen-inner button {
     background-color: #715c3f;
     border: 0;
-    padding: 10px;
+    padding: 15px 10px;
     color: #fafafa;
     font-size: 2rem;
     letter-spacing: 1px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    font-family: "Oswald", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1; }
     .round-screen-inner button:hover {
       background-color: #99917a; }
     .round-screen-inner button:last-child {
@@ -314,19 +336,22 @@
     margin: 0;
     list-style: none; }
     .player-list ul li {
-      font-weight: bold;
+      font-family: "Oswald", helvetica, arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1;
       text-align: center;
-      padding: 10px 0 5px;
+      padding: 10px 5px;
       color: #fafafa;
       border-right: 2px solid rgba(0, 0, 0, 0.1);
       border-bottom: 5px solid #99917a;
       -webkit-box-flex: 0;
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto; }
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto; }
       .player-list ul li span {
         display: block;
         font-size: 2em;
-        padding-top: 5px;
+        padding-top: 8px;
         color: #f46643; }
     .player-list ul li.active {
       border-bottom: 5px solid #005c7c; }
@@ -347,11 +372,15 @@
     flex: 0 1 50%;
     background-color: #715c3f;
     border: 0;
-    padding: 10px;
+    padding: 15px 10px;
     color: #fafafa;
     font-size: 2rem;
     letter-spacing: 1px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    font-family: "Oswald", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1; }
     .buttons-wrap button:hover {
       background-color: #99917a; }
     .buttons-wrap button:last-child {
@@ -379,7 +408,8 @@
   justify-content: space-between; }
   .challenge-wrap .challenge-info {
     padding: 20px 10px 10px;
-    background-color: #bab39e;
+    background-color: #005c7c;
+    color: #fafafa;
     border-top: 5px solid #005c7c;
     border-bottom: 5px solid #005c7c;
     -webkit-box-flex: 1;
@@ -403,11 +433,15 @@
   width: 100%;
   background-color: #715c3f;
   border: 0;
-  padding: 10px;
+  padding: 15px 10px;
   color: #fafafa;
   font-size: 2rem;
   letter-spacing: 1px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Oswald", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1; }
   .new-challenge-btn:hover {
     background-color: #99917a; }
   .new-challenge-btn:last-child {
