@@ -46,7 +46,19 @@ html{
 h1,h2,h3,h4,h5,h6{
   @include oswald;
 }
-p{
+p, input{
   font-family: $font-body;
   -webkit-font-smoothing: antialiased;
+}
+::-webkit-input-placeholder {
+  color: $white;
+}
+::-moz-placeholder {
+  color: $white;
+}
+:-ms-input-placeholder {
+  color: $white;
+}
+:-moz-placeholder {
+  color: $white;
 }

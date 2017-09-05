@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
   name: '',
   description: '',
   image: '',
-  numPlayers: 1,
+  numPlayers: 2,
   whosTurn: 0,
   currentRound: 1,
   winner: '',
@@ -30,8 +30,19 @@ export default Ember.Controller.extend({
         _this.set('image', challenge.image);
       });
     },
-    setNumPlayers: function(num){
-      this.set('numPlayers', num);
+    morePlayers: function(){
+      let num = this.get('numPlayers') + 1;
+
+      if( num <= 4 ){
+        this.set('numPlayers', num);
+      }
+    },
+    lessPlayers: function(){
+      let num = this.get('numPlayers') - 1;
+
+      if( num >= 2 ){
+        this.set('numPlayers', num);
+      }
     },
     addPlayer: function(){
       let player1Name = this.get('player1Name'),

@@ -22,11 +22,15 @@
   }
   input{
     display: block;
-    margin:0 auto 10px;
-    width:100%;
-    padding:0 10px;
-    font-size:1.5rem;
-    height: 58px;
+    width: 100%;
+    margin: 30px auto 15px;
+    padding:0 0 10px 0;
+    font-size:1.5em;
+    background-color: transparent;
+    border: none;
+    color: $white;
+    outline: 0;
+    border-bottom: 2px solid $white;
   }
   button{
     width:100%;
@@ -53,7 +57,6 @@
   background-color: $blue;
   color: $white;
   text-align: center;
-  padding:20px;
   @include flex;
   @include flex-vertical;
   @include flex-center;
@@ -64,21 +67,32 @@
   &.title-card{
     position: absolute;
     z-index:9;
-    animation-name: fadeOut;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   &.player-card{
     position: absolute;
     z-index: 5;
     opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 3s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    @include flex-between;
   }
 
   h1{
@@ -86,28 +100,60 @@
     font-size: 3rem;
     color: $white;
   }
+  h2{
+    font-size: 2rem;
+    margin: 20px 0 0;
+  }
+  .start-btn button{
+    opacity: 0;
+  }
+  .start-btn.active button{
+    opacity: 1;
+  }
   button{
     @include button-style;
   }
 }
 .end-screen-inner{
   @include flex-between;
-  padding:0;
 }
-.start-screen-num-players{
-  @include flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  padding:0;
-  margin:0 0 10px;
+.start-screen-num-players-wrap{
+  padding: 0 20px;
 
-  li{
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(33% - 8px);
-            flex: 0 1 calc(33% - 8px);
+  .start-screen-num-players{
+    @include flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    padding:0 0 20px;
+
+    li{
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 calc(33% - 8px);
+              flex: 0 1 calc(33% - 8px);
+      text-align: center;
+      background-color: #aaa;
+    }
+  }
+}
+.more-player-btn-wrap{
+  text-align: right;
+  padding-top:5px;
+
+  .more-player-btn,
+  .less-player-btn{
+    cursor: pointer;
+    display: inline-block;
     text-align: center;
-    background-color: #aaa;
+    background-color: $white;
+    color: $blue;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1;
+    height:32px;
+    width:32px;
+    margin-left: 10px;
+    border-radius: 5px;
   }
 }
