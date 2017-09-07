@@ -21,7 +21,7 @@ export default Ember.Controller.extend({
   actions: {
     newChallenge: function(){
       let _this = this;
-      $.getJSON("/challenge-packs/bahpack1.json", function(data){
+      Ember.$.getJSON("/challenge-packs/bahpack1.json", function(data){
         let num = Math.floor(Math.random() * data['challenges'].length),
             challenge = data['challenges'][num];
 
@@ -86,7 +86,7 @@ export default Ember.Controller.extend({
           nextTurn = turn + 1,
           round = this.get('currentRound'),
           nextRound = round + 1,
-          winnerNum = 0,
+          //winnerNum = 0,
           totalRounds = this.get('totalRounds');
 
       if(turn >= numPlayers){
@@ -98,7 +98,7 @@ export default Ember.Controller.extend({
           for( var i = 0; i < this.get('players').length; i++){
             arr.push( this.get('players').objectAt(i).score );
           }
-          console.log(arr);
+          //console.log(arr);
           let winnerNum = arr.indexOf( Math.max(...arr) ),
               winner = this.get('players').objectAt(winnerNum).name;
 
@@ -113,14 +113,14 @@ export default Ember.Controller.extend({
       }
 
       this.set('whosTurn', nextTurn);
-      console.log("Player "+nextTurn+"'s turn");
+      //console.log("Player "+nextTurn+"'s turn");
       this.send('newChallenge');
     },
     firstRound: function(){
       this.send('newChallenge');
       this.send('addPlayer');
       this.set('gameStarted', true);
-      console.log("start game");
+      //console.log("start game");
     },
     newGame: function(){
       this.set('name', '');
@@ -134,11 +134,11 @@ export default Ember.Controller.extend({
       for(var i = 0; i < this.get('players').length; i++){
         Ember.set(this.get('players').objectAt(i), 'score', 0);
       }
-      console.log('new game');
+      //console.log('new game');
     },
     gameOver: function(){
       this.set('gameEnded', true);
-      console.log("end game");
+      //console.log("end game");
     },
     addPoint: function(){
       let player = this.get('players').objectAt(this.get('whosTurn'));
